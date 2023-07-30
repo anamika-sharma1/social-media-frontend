@@ -39,7 +39,7 @@ const Settings = () => {
     obj.username = user?.username;
     // console.log(obj);
     try {
-      const res = await axios.put(`${BASE_URL}/users/update`, obj, {
+      await axios.put(`${BASE_URL}/users/update`, obj, {
         headers: {
           Authorization: token,
         },
@@ -54,7 +54,7 @@ const Settings = () => {
 
   const deleteProfile = async () => {
     try {
-      const res = await axios.delete(
+      await axios.delete(
         `${BASE_URL}/users/delete`,
         {
           username: user?.username,

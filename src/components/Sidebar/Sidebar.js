@@ -1,13 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import RssFeedOutlinedIcon from "@mui/icons-material/RssFeedOutlined";
-import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import GroupIcon from "@mui/icons-material/Group";
-import BookmarkIcon from "@mui/icons-material/Bookmark";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import WorkOutlinedIcon from "@mui/icons-material/WorkOutlined";
-import EventOutlinedIcon from "@mui/icons-material/EventOutlined";
-import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
 import ChatIcon from "@mui/icons-material/Chat";
 import PersonIcon from "@mui/icons-material/Person";

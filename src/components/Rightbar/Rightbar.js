@@ -20,6 +20,7 @@ const Rightbar = ({ user }) => {
     setFollow(currentUser?.following?.includes(user?._id));
   }, [user, currentUser]);
 
+  //in this useeffect initially no dependencies were there
   useEffect(() => {
     if (!user) {
       const getFriends = async () => {
@@ -34,7 +35,7 @@ const Rightbar = ({ user }) => {
       };
       getFriends();
     }
-  }, []);
+  }, [currentUser?._id, user]);
 
   useEffect(() => {
     if (user) {

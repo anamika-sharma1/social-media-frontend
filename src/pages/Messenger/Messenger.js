@@ -90,7 +90,7 @@ const Messenger = () => {
     });
 
     try {
-      const res = await axios.post(`${BASE_URL}/message`, message);
+      await axios.post(`${BASE_URL}/message`, message);
 
       setMessages([...messages, message]);
       setNewMessage("");

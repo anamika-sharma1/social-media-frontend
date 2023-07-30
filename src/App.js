@@ -6,7 +6,6 @@ import Messenger from "./pages/Messenger/Messenger";
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./Auth/AuthContextProvider";
-import UpdatePost from "./components/UpdatePost/UpdatePost";
 import Settings from "./pages/Settings/Settings";
 
 const App = () => {

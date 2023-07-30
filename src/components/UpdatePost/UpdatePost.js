@@ -12,7 +12,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 const UpdatePost = ({ post, user }) => {
   // console.log(post, user);
-  const { user: currentUser, token, theme } = useContext(AuthContext);
+  const { token } = useContext(AuthContext);
 
   const title = useRef();
   const desc = useRef();
@@ -40,15 +40,11 @@ const UpdatePost = ({ post, user }) => {
     // console.log("in");
     // e.preventDefault();
     try {
-      const res = await axios.put(
-        `${BASE_URL}/posts/update/${post?._id}`,
-        body,
-        {
-          headers: {
-            Authorization: token,
-          },
-        }
-      );
+      await axios.put(`${BASE_URL}/posts/update/${post?._id}`, body, {
+        headers: {
+          Authorization: token,
+        },
+      });
       window.location.reload();
     } catch (error) {
       console.log(error);

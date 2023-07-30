@@ -12,7 +12,7 @@ const ManagePost = ({ post, user }) => {
   const [edit, setEdit] = useState(false);
   const handleDelete = async () => {
     try {
-      const res = await axios.delete(`${BASE_URL}/posts/delete/${post?._id}`, {
+      await axios.delete(`${BASE_URL}/posts/delete/${post?._id}`, {
         headers: {
           Authorization: token,
         },
