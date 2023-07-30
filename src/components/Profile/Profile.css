@@ -22,6 +22,7 @@
 
 .profile-left{
     flex: 3;
+    position: sticky;
 }
 
 .follow-user{
