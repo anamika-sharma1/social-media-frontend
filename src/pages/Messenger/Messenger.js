@@ -20,8 +20,10 @@ const Messenger = () => {
   const socket = useRef();
   const scrollRef = useRef();
 
+  // socket.current = io("ws://localhost:8800");
+
   useEffect(() => {
-    socket.current = io("ws://localhost:8800");
+    socket.current = io("ws://social-media-socket-fz01.onrender.com");
     socket?.current?.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
