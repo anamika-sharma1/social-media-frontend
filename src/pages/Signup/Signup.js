@@ -57,7 +57,9 @@ const Signup = () => {
         <div className="signup-header">
           <img className="signup-logo" src={logo} alt="logo" />
           <h1>SocialLint</h1>
-          <span>A fast and reliable social-media app!</span>
+          <span style={{ marginBottom: "10px" }}>
+            A fast and reliable social-media app!
+          </span>
         </div>
         <div className="signup-box">
           <form className="signup-box-wrapper" onSubmit={handleForm}>
