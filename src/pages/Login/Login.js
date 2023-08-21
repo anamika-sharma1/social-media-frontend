@@ -40,7 +40,9 @@ const Login = () => {
         <div className="login-header">
           <img className="signup-logo" src={logo} alt="logo" />
           <h1>SocialLint</h1>
-          <span>A fast and reliable social-media app!</span>
+          <span style={{ marginBottom: "10px" }}>
+            A fast and reliable social-media app!
+          </span>
         </div>
         <div className="login-box">
           <form className="login-box-wrapper" onSubmit={handleForm}>
