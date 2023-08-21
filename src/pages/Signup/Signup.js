@@ -53,7 +53,7 @@ const Signup = () => {
   };
   return (
     <div className="signup">
-      <div className="signup-wrapper">
+      <div className="signup-wrapper-final">
         <div className="signup-header">
           <img className="signup-logo" src={logo} alt="logo" />
           <h1>SocialLint</h1>
@@ -95,7 +95,7 @@ const Signup = () => {
               placeholder="from"
               ref={from}
             />
-            <div className="relationship">
+            <div className="relationship-final">
               <label htmlFor="relationship">Relationship Status:</label>
               <div className="items">
                 <div className="item-1">

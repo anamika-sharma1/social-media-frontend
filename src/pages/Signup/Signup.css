@@ -11,7 +11,7 @@
     background-color: rgb(248, 224, 224);
 }
 
-.signup-wrapper {
+.signup-wrapper-final {
     width: 70%;
     height: 80%;
     box-shadow: 1px 2px 14px -7px black;
@@ -46,7 +46,7 @@
     flex: 1
 }
 
-.relationship{
+.relationship-final{
     display: flex;
     width: 90%;
     height: 7%;
